@@ -2,9 +2,16 @@ body{
     background-image: url(../Assets/comic-background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
+    color:cornsilk;
 }
 p{
-    font-size: 50px;
+    font-size: 40px;
+}
+@media (max-width: 800px)
+{
+    body{
+        background-position: center;
+    }
 }
