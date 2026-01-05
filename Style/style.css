@@ -7,7 +7,10 @@ body{
     color:cornsilk;
 }
 p{
-    font-size: 40px;
+    font-size: 35px;
+}
+.highlight{
+    background-color: darkblue;
 }
 @media (max-width: 800px)
 {

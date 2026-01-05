@@ -2,16 +2,13 @@ const randomJokeBtn = document.getElementById("randomJokeBtn");
 const jokeText = document.getElementById("jokeText");
 
 //create an async function to get data from the dad joke API
-
-async function getData() {
-    const response = await fetch("https://icanhazdadjoke.com/", {
-        // method: 'GET',
+const getData = async () => {
+    const response = await fetch('https://icanhazdadjoke.com' , {
         headers: {
             'Accept': "application/json"
         }
     });
     const data = await response.json()
-    console.log(data.joke);
     //call a function to display the joke!
     displayJoke(data.joke)
 }
@@ -23,5 +20,5 @@ randomJokeBtn.addEventListener("click" , () => {
 
     getData();
 })
-
+//calls the function when the website is loaded!
 getData();
