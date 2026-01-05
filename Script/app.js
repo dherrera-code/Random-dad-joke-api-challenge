@@ -5,7 +5,7 @@ const jokeText = document.getElementById("jokeText");
 
 async function getData() {
     const response = await fetch("https://icanhazdadjoke.com/", {
-        method: 'GET',
+        // method: 'GET',
         headers: {
             'Accept': "application/json"
         }
